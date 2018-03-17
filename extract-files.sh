@@ -55,8 +55,8 @@ if [ -z "$SRC" ]; then
 fi
 
 # Initialize the helper
-setup_vendor "$DEVICE" "$VENDOR" "$VALIDUS_ROOT"
+setup_vendor "$DEVICE" "$VENDOR" "$VALIDUS_ROOT" false "$CLEAN_VENDOR"
 
-extract "$MY_DIR"/proprietary-files.txt "$SRC"
+extract "$MY_DIR"/proprietary-files.txt "$SRC" "$SECTION"
 
 "$MY_DIR"/setup-makefiles.sh
