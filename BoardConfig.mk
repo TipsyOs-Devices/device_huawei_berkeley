@@ -47,6 +47,9 @@ TARGET_OTA_ASSERT_DEVICE := berkeley,kirin970
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
 BOARD_HAVE_BLUETOOTH := true
 
+#Bootanimation
+TARGET_BOOTANIMATION_PRELOAD := true
+
 # Extended Filesystem Support
 TARGET_EXFAT_DRIVER := exfat
 
